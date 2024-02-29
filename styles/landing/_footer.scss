@@ -1,0 +1,32 @@
+@import "../function";
+@import "../variable";
+
+footer {
+  @include flexCenter;
+  padding: 5% 0 2% 0;
+  .logo {
+    padding-left: 0px;
+    margin-right: auto;
+  }
+
+  .footer-nav-box {
+    @include flexBetween;
+    padding-right: 5%;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    padding-left: 20px;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    color: $main-color;
+    font-weight: bold;
+  }
+  .social-box {
+    padding-left: 5%;
+  }
+  img {
+    padding-right: 20px;
+  }
+}

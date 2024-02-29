@@ -1,0 +1,11 @@
+@import "header";
+@import "main";
+@import "footer";
+@use "../function";
+@use "../variable";
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0 7%;
+  color: $main-color;
+}

@@ -1,0 +1,54 @@
+@import "../function";
+@import "../variable";
+.nav-container {
+  @include flexCenter;
+  padding: 5% 0%;
+  margin: 0 auto;
+
+  .logo {
+    padding-left: 0px;
+    margin-right: auto;
+  }
+  .navigation {
+    @include flexCenter;
+  }
+  li {
+    list-style: none;
+    padding-left: 15px;
+  }
+  a {
+    padding-left: 10px;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    color: $main-color;
+  }
+}
+.info-container {
+  @include flexBetween;
+  .name-container {
+    max-width: 100%;
+    width: 38rem;
+  }
+  .name-color {
+    color: $strong-color;
+    font-weight: bold;
+  }
+  h1 {
+    letter-spacing: 0.2rem;
+  }
+  .design-letter {
+    position: relative;
+    opacity: $opacity-letter;
+    font-weight: lighter;
+    align-self: flex-end;
+    padding-top: 10px;
+    &::before {
+      content: "";
+      position: absolute;
+      border-top: 2px solid;
+      opacity: $opacity-letter;
+      top: 0;
+      width: 1.6rem;
+    }
+  }
+}

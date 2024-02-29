@@ -1,0 +1,21 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin line {
+  content: "";
+  position: absolute;
+  border-top: 2px solid $line-color;
+  top: 0;
+}
+%flex-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
