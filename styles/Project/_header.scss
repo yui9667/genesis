@@ -1,6 +1,5 @@
-@import "../function";
-@import "../variable";
-
+@use "../function";
+@use "../variable";
 @import "../landing/header";
 
 .title-container {
@@ -14,7 +13,7 @@
   }
   p {
     max-width: 100%;
-    width: 48.1rem;
+    width: 47rem;
     letter-spacing: 0.1rem;
     padding: 3% 0;
     font-weight: lighter;
@@ -36,6 +35,7 @@
   }
 
   .project-title {
+    opacity: $opacity-letter;
     position: relative;
     padding-bottom: 7px;
     &::before {

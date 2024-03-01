@@ -1,0 +1,55 @@
+@import "../landing/header";
+@import "../function";
+@import "../variable";
+
+.header-container {
+  @include flexBetween;
+  padding-bottom: 10%;
+  h1 {
+    max-width: 100%;
+    width: 24rem;
+    letter-spacing: 1px;
+    line-height: 2.5rem;
+    padding-bottom: 2%;
+  }
+  p {
+    font-weight: lighter;
+    max-width: 100%;
+    width: 24rem;
+    line-height: 1.4rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  input[type="text"] {
+    max-width: 100%;
+    width: 25rem;
+    height: 4rem;
+    border-width: 0 0 1px 0;
+    justify-content: center;
+    font-weight: bold;
+    &::before {
+      border-bottom: 2px solid $line-color;
+    }
+  }
+  textarea {
+    font-weight: bold;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    height: 1rem;
+    border-width: 0 0 1px 0;
+    justify-items: center;
+    &::before {
+      border-bottom: 1px solid $line-color;
+    }
+  }
+  input[type="submit"] {
+    background-color: $strong-color;
+    color: #fff;
+    width: 8rem;
+    height: 3rem;
+    border-style: none;
+    margin-top: 8%;
+  }
+}

@@ -12,9 +12,8 @@
   }
 }
 .contianer2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 3.8rem;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
 }
