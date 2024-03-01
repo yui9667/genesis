@@ -14,6 +14,13 @@
   border-top: 2px solid $line-color;
   top: 0;
 }
+
+@mixin line-under {
+  content: "";
+  position: absolute;
+  border-top: 2px solid $line-color;
+  bottom: 0;
+}
 %flex-columns {
   display: flex;
   flex-direction: column;

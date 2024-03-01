@@ -3,61 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/Project/index.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Genesis website</title>
   </head>
   <body>
     <header>
       <nav class="nav-container">
-        <div class="logo">Genesis</div>
+        <div class="logo"><img src="images/logo.svg" alt="Genesis logo" /></div>
         <ul class="navigation">
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#project.html">Projects</a></li>
+          <li><a href="#contact.html">Contact</a></li>
         </ul>
       </nav>
-      <div class="header-container">
-        <h1>A fresh new title can make all the difference!</h1>
-        <p>
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don't look even slightly believable.
-          You need to be sure there isn't anything embarrassing hidden in the
-          middle of text. All the Lorem Ipsum generators on the Internet tend to
-          repeat predefined chunks as necessary, making this the first true
-          generator on the Internet. It uses a dictionary of over 200 Latin
-          words, combined with a handful of model sentence structures.
-        </p>
-      </div>
-      <div class="project-detail">
-        <div class="project-box">
-          <h4 class="project-title">Project</h4>
-          <h4>Genesis Portfolio</h4>
+      <div class="title-container">
+        <div class="title-box">
+          <h1>A fresh new title can make all the difference!</h1>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+          <p>
+            You need to be sure there isn't anything embarrassing hidden in the
+            middle of text. All the Lorem Ipsum generators on the Internet tend
+            to repeat predefined chunks as necessary, making this the first true
+            generator on the Internet. It uses a dictionary of over 200 Latin
+            words, combined with a handful of model sentence structures.
+          </p>
         </div>
-        <div class="project-box">
-          <h4 class="project-title">Design</h4>
-          <h4>Bakhtiyar Sattarov</h4>
-        </div>
-        <div class="project-box">
-          <h4 class="project-title">Clinet</h4>
-          <h4>Crarftwork</h4>
-        </div>
-        <div class="project-box">
-          <h4 class="project-title">Deliverable</h4>
-          <h4>Website Design</h4>
-        </div>
-        <div class="project-box">
-          <h4 class="project-title">Year</h4>
-          <h4>2018</h4>
-        </div>
-        <div class="project-box">
-          <h4 class="project-title">Field</h4>
-          <h4>Branding, Personal</h4>
+        <div class="project-detail">
+          <div class="project-box">
+            <h4 class="project-title">Project</h4>
+            <h4 class="project-inside">Genesis Portfolio</h4>
+          </div>
+          <div class="project-box">
+            <h4 class="project-title">Design</h4>
+            <h4 class="project-inside">Bakhtiyar Sattarov</h4>
+          </div>
+          <div class="project-box">
+            <h4 class="project-title">Clinet</h4>
+            <h4 class="project-inside">Crarftwork</h4>
+          </div>
+          <div class="project-box box4">
+            <h4 class="project-title">Deliverable</h4>
+            <h4 class="project-inside">Website Design</h4>
+          </div>
+          <div class="project-box">
+            <h4 class="project-title">Year</h4>
+            <h4 class="project-inside">2018</h4>
+          </div>
+          <div class="project-box">
+            <h4 class="project-title">Field</h4>
+            <h4 class="project-inside">Branding, Personal</h4>
+          </div>
         </div>
       </div>
     </header>
     <main>
-      <section class="section1">
+      <section class="section">
         <div class="img-container">
-          <img src="images/image2-1.png" alt="A girl walking" />
+          <img
+            class="walk-img"
+            src="images/image2-1.png"
+            alt="A girl walking"
+          />
           <p>
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
@@ -82,13 +98,16 @@
       </section>
     </main>
     <footer>
-      <div class="footer-container">
-        <div class="logo">Genesis</div>
-        <div class="nav-box">
-          <h4>Project</h4>
-          <h4>Contact</h4>
-        </div>
-        <div class="social-container"></div>
+      <div class="logo"><img src="images/logo.svg" alt="Genesis logo" /></div>
+
+      <ul class="footer-nav-box">
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="social-box">
+        <img src="images/dribbble-logo.svg" alt="Dribble icon" />
+        <img src="images/instagram.svg" alt="instagram icon" />
+        <img src="images/twitter.svg" alt="twitter intro-container" />
       </div>
     </footer>
   </body>

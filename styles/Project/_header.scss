@@ -1,0 +1,46 @@
+@import "../function";
+@import "../variable";
+
+@import "../landing/header";
+
+.title-container {
+  @include flexBetween;
+
+  .title-box h1 {
+    max-width: 100%;
+    width: 30rem;
+    letter-spacing: 0.2rem;
+    padding-bottom: 2rem;
+  }
+  p {
+    max-width: 100%;
+    width: 48.1rem;
+    letter-spacing: 0.1rem;
+    padding: 3% 0;
+    font-weight: lighter;
+  }
+  .project-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+  }
+  .project-box {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5rem;
+  }
+
+  .box4 {
+    gap: 1.9rem;
+  }
+
+  .project-title {
+    position: relative;
+    padding-bottom: 7px;
+    &::before {
+      @include line-under;
+      width: 18rem;
+    }
+  }
+}

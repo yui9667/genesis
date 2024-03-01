@@ -1,5 +1,8 @@
 @import "../function";
 @import "../variable";
+
+/*Navigation*/
+
 .nav-container {
   @include flexCenter;
   padding: 5% 0%;
@@ -23,6 +26,8 @@
     color: $main-color;
   }
 }
+
+/*Intoruduce -header-*/
 .info-container {
   @include flexBetween;
   .name-container {
