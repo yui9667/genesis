@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/Contact/index.css" />
-    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/Contact/index.css" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
@@ -16,13 +16,13 @@
     <header>
       <nav class="nav-container">
         <div class="logo">
-          <a href="/index.html">
-            <img src="images/logo.svg" alt="Genesis logo"
+          <a href="index.html">
+            <img src="../images/logo.svg" alt="Genesis logo"
           /></a>
         </div>
         <ul class="navigation">
-          <li><a href="/project.html">Projects</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
 
@@ -34,10 +34,22 @@
             goals, they help us to stay sharp.
           </p>
         </div>
-
-        <form action="/action_contact.php">
-          <input type="text" id="name" name="name" placeholder="Name" />
-          <input type="text" id="email" name="email" placeholder="Email" />
+        <!--Contact -->
+        <form action="/action_contact.php" method="post">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
           <textarea
             name="message"
             id="message"
@@ -48,24 +60,24 @@
       </div>
     </header>
     <main>
-      <img class="map" src="images/Map.png" alt="Google map " />
+      <img class="map" src="../images/Map.png" alt="Google map " />
     </main>
-    <!--Contact -->
+    <!--Footer -->
     <footer>
       <div class="logo">
-        <a href="/index.html"
-          ><img src="images/logo.svg" alt="Genesis logo"
+        <a href="index.html"
+          ><img src="../images/logo.svg" alt="Genesis logo"
         /></a>
       </div>
 
       <ul class="footer-nav-box">
-        <li><a href="/project.html">Projects</a></li>
-        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="social-box">
-        <img src="images/dribbble-logo.svg" alt="Dribble icon" />
-        <img src="images/instagram.svg" alt="instagram icon" />
-        <img src="images/twitter.svg" alt="twitter intro-container" />
+        <img src="../images/dribbble-logo.svg" alt="Dribble icon" />
+        <img src="../images/instagram.svg" alt="instagram icon" />
+        <img src="../images/twitter.svg" alt="twitter intro-container" />
       </div>
     </footer>
   </body>
