@@ -6,8 +6,8 @@
   @include flexBetween;
 
   .title-box h1 {
-    max-width: 100%;
-    width: 30rem;
+    max-width: 480px;
+    width: 100%;
     letter-spacing: 0.2rem;
     padding-bottom: 2rem;
   }
@@ -17,6 +17,7 @@
     letter-spacing: 0.1rem;
     padding: 3% 0;
     font-weight: lighter;
+    line-height: 2;
   }
   .project-detail {
     display: flex;
@@ -41,6 +42,35 @@
     &::before {
       @include line-under;
       width: 18rem;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .title-container {
+    @include flexCenter;
+    flex-direction: column;
+
+    .title-box {
+      text-align: center;
+
+      h1 {
+        max-width: 1000px;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .title-container {
+    .title-box {
+      h1 {
+        font-size: 23px;
+      }
+      p {
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 700px;
+      }
     }
   }
 }

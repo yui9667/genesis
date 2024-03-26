@@ -57,3 +57,38 @@
     }
   }
 }
+
+@media (max-width: 1300px) {
+  header {
+    .info-container {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .design-letter {
+        align-self: flex-start;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  header .nav-container {
+    .logo img {
+      width: 50px;
+    }
+    .navigation {
+      li a {
+        font-size: 12px;
+        line-height: 2;
+      }
+    }
+  }
+  .name-container {
+    .name-color {
+      font-size: 23px;
+    }
+    h1 {
+      font-size: 23px;
+    }
+  }
+}

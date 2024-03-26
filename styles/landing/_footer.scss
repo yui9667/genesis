@@ -26,10 +26,28 @@ footer {
     color: #111111;
     font-weight: bold;
   }
-  .social-box {
-    padding-left: 5%;
-  }
+
   img {
     padding-right: 20px;
+  }
+}
+@media (max-width: 400px) {
+  footer {
+    .logo img {
+      width: 60px;
+
+      padding-bottom: 20px;
+    }
+    .footer-conttainer {
+      .footer-nav-box {
+        li a {
+          font-size: 10px;
+          line-height: 7;
+        }
+      }
+    }
+    .social-box img {
+      width: 12px;
+    }
   }
 }

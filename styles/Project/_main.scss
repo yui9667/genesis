@@ -2,13 +2,13 @@
   padding-top: 7%;
 
   .walk-img {
-    max-width: 100%;
     width: 100%;
   }
   p {
     padding-top: 2rem;
     font-weight: lighter;
     margin: 5px;
+    line-height: 2;
   }
 }
 .contianer2 {
@@ -16,4 +16,28 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
+}
+@media (max-width: 1250px) {
+  .section .img-container {
+    @include flexCenter;
+    flex-direction: column;
+    .walk-img {
+      max-width: 800px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .contianer2 {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .section .img-container {
+    p {
+      line-height: 2;
+      font-size: px;
+    }
+  }
 }
